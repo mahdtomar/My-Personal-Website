@@ -82,6 +82,25 @@ body {
             animation-iteration-count: 1;
             animation-fill-mode: both;
           }
+          .my-work{
+            width: 400%;
+            height: 100%;
+            position: relative;
+            .slider{
+              display: flex;
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              right:0%;
+              transition: right 0.5s;
+              .project{
+                margin-inline:30px ;
+                width: 90%;
+                height: 100%;
+                background-color: red;
+              }
+            }
+          }
           .about-me{
             width: 100%;
             height: 100%;

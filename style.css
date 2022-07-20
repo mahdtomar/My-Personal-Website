@@ -129,6 +129,31 @@ body .browser .container .browser-body .screen svg {
           animation-fill-mode: both;
 }
 
+body .browser .container .browser-body .screen .my-work {
+  width: 400%;
+  height: 100%;
+  position: relative;
+}
+
+body .browser .container .browser-body .screen .my-work .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
+}
+
+body .browser .container .browser-body .screen .my-work .slider .project {
+  margin-inline: 30px;
+  width: 90%;
+  height: 100%;
+  background-color: red;
+}
+
 body .browser .container .browser-body .screen .about-me {
   width: 100%;
   height: 100%;
