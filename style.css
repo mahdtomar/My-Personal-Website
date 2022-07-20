@@ -1,0 +1,305 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "fff_forwardregular";
+}
+
+body {
+  background-color: black;
+}
+
+body .browser {
+  border-radius: 20px;
+  width: 95vw;
+  height: 95vh;
+  background-color: #a8a8a8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  max-width: 1440px;
+  max-height: 1000px;
+}
+
+body .browser .container {
+  width: 100%;
+  margin: auto;
+}
+
+body .browser .container .browser-top-edge {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  background-color: white;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .browser .container .browser-top-edge .browser-opitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+}
+
+body .browser .container .browser-top-edge .browser-opitions div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+body .browser .container .browser-top-edge .browser-opitions div.red {
+  background-color: red;
+}
+
+body .browser .container .browser-top-edge .browser-opitions div.green {
+  background-color: green;
+}
+
+body .browser .container .browser-top-edge .browser-opitions div.blue {
+  background-color: blue;
+}
+
+body .browser .container .browser-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .browser .container .browser-body .screen {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-shadow: 2px 0px 2px black;
+          box-shadow: 2px 0px 2px black;
+  max-width: 1000px;
+  height: 600px;
+  background-color: #add7e0;
+  width: 70%;
+}
+
+body .browser .container .browser-body .screen:hover svg {
+  -webkit-animation: smileImageIN;
+          animation: smileImageIN;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body .browser .container .browser-body .screen svg {
+  position: absolute;
+  right: -100%;
+  bottom: -100%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  width: 300px;
+  -webkit-animation: smileImageOut;
+          animation: smileImageOut;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body .browser .container .browser-body .screen .about-me {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body .browser .container .browser-body .screen .about-me .introduction {
+  padding: 20px;
+  width: 70%;
+}
+
+body .browser .container .browser-body .screen .about-me .introduction h2 span {
+  margin: 10px 0px;
+  display: block;
+  font-size: 2em;
+  letter-spacing: 4px;
+}
+
+body .browser .container .browser-body .sidebar {
+  width: 20%;
+}
+
+body .browser .container .browser-body .sidebar ul li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 180px;
+}
+
+body .browser .container .browser-body .sidebar ul li:hover a {
+  -webkit-animation-name: flickeringText;
+          animation-name: flickeringText;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+body .browser .container .browser-body .sidebar ul li svg {
+  width: 100px;
+}
+
+body .browser .container .browser-body .sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes flickeringText {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickeringText {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes smileImageIN {
+  from {
+    position: absolute;
+    right: -100%;
+    bottom: -100%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+  }
+  to {
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+}
+
+@keyframes smileImageIN {
+  from {
+    position: absolute;
+    right: -100%;
+    bottom: -100%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+  }
+  to {
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+}
+
+@-webkit-keyframes smileImageOut {
+  from {
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  to {
+    position: absolute;
+    right: -100%;
+    bottom: -100%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+  }
+}
+
+@keyframes smileImageOut {
+  from {
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  to {
+    position: absolute;
+    right: -100%;
+    bottom: -100%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
