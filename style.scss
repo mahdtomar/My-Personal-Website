@@ -55,15 +55,18 @@ body {
         justify-content: right;
         align-items: center;
         .screen {
+          background-color: white;
           border: 2px solid white;
           box-shadow: 2px 0px 2px black;
           max-width: 1000px;
           height: 650px;
-          background-color: rgb(173, 215, 224);
           width: 70%;
           position: relative;
+          padding-top: 40px;
           box-shadow: 20px 20px 10px 0px black;
           .my-work {
+            padding-right:40px ;
+            background-color: white;
             overflow-x: scroll;
             width: 100%;
             height: 100%;
@@ -81,14 +84,14 @@ body {
               background-image: url(./images/caret-left-solid.svg);
               border: 3px solid black;
             }
-            &::-webkit-scrollbar-button:horizontal:increment{
+            &::-webkit-scrollbar-button:horizontal:increment {
               background-image: url(./images/caret-right-solid.svg);
             }
             /* Track */
             &::-webkit-scrollbar-track-piece {
               border: 3px solid black;
-              border-right: 0px ;
-              border-left: 0px ;
+              border-right: 0px;
+              border-left: 0px;
               background-image: url(./images/Knitted-Grey-Seamless-Pattern-For-Website-Background.webp);
             }
             /* Handle */
@@ -104,6 +107,8 @@ body {
             //   background: rgb(28, 32, 90);
             // }
             .slider {
+            background-color: rgb(173, 215, 224);
+            padding: 20px;
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -255,6 +260,7 @@ body {
           height: 90%;
           .screen {
             max-height: 80%;
+
             .my-work {
               .slider {
                 .project {

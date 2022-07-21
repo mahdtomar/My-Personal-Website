@@ -88,19 +88,22 @@ body .browser .container .browser-body {
 }
 
 body .browser .container .browser-body .screen {
+  background-color: white;
   border: 2px solid white;
   -webkit-box-shadow: 2px 0px 2px black;
           box-shadow: 2px 0px 2px black;
   max-width: 1000px;
   height: 650px;
-  background-color: #add7e0;
   width: 70%;
   position: relative;
+  padding-top: 40px;
   -webkit-box-shadow: 20px 20px 10px 0px black;
           box-shadow: 20px 20px 10px 0px black;
 }
 
 body .browser .container .browser-body .screen .my-work {
+  padding-right: 40px;
+  background-color: white;
   overflow-x: scroll;
   width: 100%;
   height: 100%;
@@ -144,6 +147,8 @@ body .browser .container .browser-body .screen .my-work::-webkit-scrollbar-thumb
 }
 
 body .browser .container .browser-body .screen .my-work .slider {
+  background-color: #add7e0;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
