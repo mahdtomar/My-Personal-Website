@@ -79,9 +79,9 @@ body .browser .container .browser-body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,6 +96,8 @@ body .browser .container .browser-body .screen {
   background-color: #add7e0;
   width: 70%;
   position: relative;
+  -webkit-box-shadow: 20px 20px 10px 0px black;
+          box-shadow: 20px 20px 10px 0px black;
 }
 
 body .browser .container .browser-body .screen .my-work {
@@ -328,9 +330,9 @@ body .browser .container .browser-body .sidebar ul li a {
     display: -ms-flexbox;
     display: flex;
     margin-top: 0px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -366,10 +368,11 @@ body .browser .container .browser-body .sidebar ul li a {
     height: 90%;
   }
   body .browser .container .browser-body .sidebar ul li {
-    height: 140px;
+    margin: 20px 0px;
+    height: 120px;
   }
   body .browser .container .browser-body .sidebar ul li svg {
-    width: 80px;
+    width: 70px;
   }
 }
 

@@ -52,7 +52,7 @@ body {
       .browser-body {
         display: flex;
         margin-top: 50px;
-        justify-content: space-evenly;
+        justify-content: right;
         align-items: center;
         .screen {
           border: 2px solid white;
@@ -62,7 +62,7 @@ body {
           background-color: rgb(173, 215, 224);
           width: 70%;
           position: relative;
-
+          box-shadow: 20px 20px 10px 0px black;
           .my-work {
             overflow-x: scroll;
             width: 100%;
@@ -85,17 +85,12 @@ body {
               background-image: url(./images/caret-right-solid.svg);
             }
             /* Track */
-            &::-webkit-scrollbar-track {
-              // border: 3px solid black;
-              //   background: #8e1919;
-            }
             &::-webkit-scrollbar-track-piece {
               border: 3px solid black;
               border-right: 0px ;
               border-left: 0px ;
               background-image: url(./images/Knitted-Grey-Seamless-Pattern-For-Website-Background.webp);
             }
-
             /* Handle */
             &::-webkit-scrollbar-thumb {
               background-color: white;
@@ -255,7 +250,7 @@ body {
         .browser-body {
           display: flex;
           margin-top: 0px;
-          justify-content: space-evenly;
+          justify-content: right;
           align-items: center;
           height: 90%;
           .screen {
@@ -292,9 +287,10 @@ body {
             ul {
               height: 90%;
               li {
-                height: 140px;
+                margin: 20px 0px;
+                height: 120px;
                 svg {
-                  width: 80px;
+                  width: 70px;
                 }
               }
             }
