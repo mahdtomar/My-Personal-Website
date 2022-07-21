@@ -103,6 +103,42 @@ body .browser .container .browser-body .screen .my-work {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+body .browser .container .browser-body .screen .my-work::-webkit-scrollbar {
+  height: 40px;
+}
+
+body .browser .container .browser-body .screen .my-work::-webkit-scrollbar-button {
+  background-color: white;
+  width: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./images/caret-left-solid.svg);
+  border: 3px solid black;
+}
+
+body .browser .container .browser-body .screen .my-work::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url(./images/caret-right-solid.svg);
+}
+
+body .browser .container .browser-body .screen .my-work::-webkit-scrollbar-track-piece {
+  border: 3px solid black;
+  border-right: 0px;
+  border-left: 0px;
+  background-image: url(./images/Knitted-Grey-Seamless-Pattern-For-Website-Background.webp);
+}
+
+body .browser .container .browser-body .screen .my-work::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
 }
 
 body .browser .container .browser-body .screen .my-work .slider {
